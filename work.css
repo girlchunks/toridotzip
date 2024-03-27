@@ -1,0 +1,54 @@
+html, body {
+    height: 99%;
+    width: 99%;
+    font-family: 'Arial', sans-serif;
+    background-color: #0C0C0C;
+    color: #FAF9F6;
+}
+
+.container {
+    min-height: 100%;
+    min-width: 100%;
+
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-family: 'Satoshi-Variable';
+    font-variation-settings: 'wght' 500.0;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FAF9F6;
+    font-size: 2.5vw;
+}
+
+#name {
+    font-family: "Gambetta-Variable", serif;
+    font-variation-settings: 'wght' 500.0;
+    letter-spacing: 1vw;
+}
+
+@media only screen and (orientation: portrait) {
+    ul li a {
+        font-size: 5vw;
+    }
+  }

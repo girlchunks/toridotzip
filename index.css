@@ -1,0 +1,123 @@
+html, body {
+    height: 99%;
+    width: 99%;
+    font-family: 'Arial', sans-serif;
+    background-color: #0C0C0C;
+    color: #FAF9F6;
+}
+
+.container {
+    min-height: 100%;
+    min-width: 100%;
+    display: grid;
+    grid:
+      "header" auto
+      "main" 1fr
+      "footer" auto;
+    gap: 8px;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+header {
+    grid-area: header;
+}
+
+
+main {
+    grid-area: main; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+main h1 {
+    font-family: "Gambetta-Variable", serif;
+    font-size: 8vw;
+    font-variation-settings: 'wght' 700.0;
+    letter-spacing: 2vw;
+    margin: 0;
+}
+
+#top {
+    margin-bottom: 1%;
+}
+
+#bottom {
+    margin-top: 2%;
+}
+
+#subtitle {
+    font-family: 'Satoshi-Variable';
+    font-variation-settings: 'wght' 500.0;
+    font-size: 2vw;
+    margin: 0;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-family: 'Satoshi-Variable';
+    font-variation-settings: 'wght' 500.0;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FAF9F6;
+    font-size: 2.5vw;
+}
+
+/* figure out how to stop it from wiggling */
+nav a:hover {
+    font-variation-settings: 'wght' 700.0;
+}
+
+/* change text on hover */
+#email::after  {
+    content: 'EMAIL';
+}
+#email:hover::after {
+    content: 'mail@tori.zip';
+}
+
+#insta::after  {
+    content: 'INSTAGRAM';
+}
+#insta:hover::after {
+    content: '@girlchunks';
+}
+
+/* portrait isnt perfect yet. mb change nav element layout dep. on orientation? */
+@media only screen and (orientation: portrait) {
+    main h1 {
+        font-size: 13vw;
+        margin: 0;
+    }
+    
+    #subtitle {
+        font-size: 4vw;
+    }
+
+    ul li a {
+        font-size: 5vw;
+    }
+  }
