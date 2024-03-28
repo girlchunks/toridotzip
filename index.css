@@ -1,4 +1,11 @@
+Reset CSS * {
+    margin    : 0px 0;
+    padding   : 0px 2px;
+    box-sizing: border-box;
+}
+
 html, body {
+    margin: 0%;
     height: 99%;
     width: 99%;
     font-family: 'Arial', sans-serif;
@@ -86,14 +93,12 @@ ul li a {
     font-size: 2.5vw;
 }
 
-/* figure out how to stop it from wiggling */
 nav a:hover {
     transition: 300ms;
     color: #ce93be;
 }
 
 /* change text on hover */
-/* figure out how to do transition animation here */
 #email::after  {
     content: 'EMAIL';
 }
