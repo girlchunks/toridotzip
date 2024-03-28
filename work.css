@@ -56,7 +56,7 @@ nav a:hover {
 
 .grid-wrapper {
     width: 100%;
-    margin: 1vw;
+    margin: -15vh 2vw;
     display: grid; 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; 
@@ -98,10 +98,11 @@ img {
         font-size: 4vw;
     }
 
-    /* .grid-wrapper {   
+    .grid-wrapper {  
+        margin: 0 2vw; 
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-    } */
+    } 
   }
