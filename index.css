@@ -88,10 +88,12 @@ ul li a {
 
 /* figure out how to stop it from wiggling */
 nav a:hover {
-    font-variation-settings: 'wght' 700.0;
+    transition: 300ms;
+    color: #ce93be;
 }
 
 /* change text on hover */
+/* figure out how to do transition animation here */
 #email::after  {
     content: 'EMAIL';
 }
