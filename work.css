@@ -6,7 +6,6 @@ Reset CSS * {
 
 html, body {
     margin: 0%;
-    height: 100%;
     width: 100%;
     font-family: 'Satoshi-Variable', sans-serif;
     background-color: #0C0C0C;
@@ -14,7 +13,6 @@ html, body {
 }
 
 .container {
-    height: 100%;
     width: 100%;
     display: grid;
     grid:
@@ -24,16 +22,12 @@ html, body {
     gap: 8px;
 }
 
-/* sticky breaks */
+/* actually sticky, thank u mara <3 */
 header {
     align-self: start;
     grid-area: header;
     position: sticky;
     top: 0;
-    width: 100%;
-}
-
-nav {
     width: 100%;
 }
 
