@@ -8,7 +8,6 @@
  *
  * Font Styles:
  * Gambetta Variable(Variable font)
- * Gambetta Variable Italic(Variable font)
 */
 
 /**
@@ -29,16 +28,6 @@
          font-display: swap;
          font-style: normal;
   }
-  
-  @font-face {
-    font-family: 'Gambetta-VariableItalic';
-    src: url('fonts/Gambetta-VariableItalic.woff2') format('woff2'),
-         url('fonts/Gambetta-VariableItalic.woff') format('woff'),
-         url('fonts/Gambetta-VariableItalic.ttf') format('truetype');
-         font-weight: 300 700;
-         font-display: swap;
-         font-style: italic;
-  }
 
   /**
  * @license
@@ -50,14 +39,9 @@
  *
  * Font Styles:
  * Satoshi Variable(Variable font)
- * Satoshi Variable Italic(Variable font)
 */
 
 /**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 900.0;
-*
 * available axes:
 * 'wght' (range from 300.0 to 900.0)
 */
@@ -70,14 +54,4 @@
        font-weight: 300 900;
        font-display: swap;
        font-style: normal;
-}
-
-@font-face {
-  font-family: 'Satoshi-VariableItalic';
-  src: url('fonts/Satoshi-VariableItalic.woff2') format('woff2'),
-       url('fonts/Satoshi-VariableItalic.woff') format('woff'),
-       url('fonts/Satoshi-VariableItalic.ttf') format('truetype');
-       font-weight: 300 900;
-       font-display: swap;
-       font-style: italic;
 }
