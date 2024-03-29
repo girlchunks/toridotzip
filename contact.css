@@ -21,7 +21,7 @@ html, body {
     grid:
       "header" auto
       "main" 1fr
-      "footer" auto;
+      / 1fr;
     gap: 8px;
     grid-auto-flow: column;
     align-content: center;
@@ -32,39 +32,44 @@ header {
 }
 
 
-main {
+div {
     grid-area: main; 
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
 
-main h1 {
+div h1 {
     font-family: "Gambetta-Variable", serif;
-    font-size: 8vw;
+    font-size: 5vw;
     font-variation-settings: 'wght' 700.0;
-    letter-spacing: 2vw;
+    letter-spacing: 1.2vw;
     margin: 0;
 }
 
-#top {
-    margin-bottom: 1%;
+div h1 a {
+    text-decoration: none;
+    color: #FAF9F6;
 }
 
-#bottom {
-    margin-top: 2%;
+div h1 a:hover {
+    transition: 300ms;
+    color: #ce93be;
 }
 
-#subtitle {
+#email {
+    padding-bottom: 7vh;
+}
+
+#bwah {
+    padding-bottom: 1vh;
+}
+
+div p {
     font-size: 2vw;
     margin: 0;
-}
-
-footer {
-    grid-area: footer;
-    text-align: center;
 }
 
 nav {
@@ -93,35 +98,23 @@ ul li a {
     font-size: 2.5vw;
 }
 
-nav a:hover {
+li a:hover {
     transition: 300ms;
     color: #ce93be;
 }
 
-/* change text on hover */
-#email::after  {
-    content: 'EMAIL';
-}
-#email:hover::after {
-    content: 'mail@tori.zip';
-}
-
-#insta::after  {
-    content: 'INSTAGRAM';
-}
-#insta:hover::after {
-    content: '@girlchunks';
-}
-
 /* portrait isnt perfect yet. mb change nav element layout dep. on orientation? */
 @media only screen and (orientation: portrait) {
-    main h1 {
-        font-size: 13vw;
-        margin: 0;
+    div h1 {
+        font-size: 10vw;
     }
-    
-    #subtitle {
-        font-size: 4vw;
+
+    div p {
+        font-size: 6vw;
+    }
+
+    #bwah {
+        padding-bottom: 0vh;
     }
 
     ul li a {
