@@ -1,0 +1,136 @@
+Reset CSS * {
+    margin    : 0%;
+    padding   : 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    font-family: 'Satoshi-Variable', sans-serif;
+    font-variation-settings: 'wght' 500.0;
+    background-color: #0C0C0C;
+    color: #FAF9F6;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid:
+    "header" auto
+    "body" 1fr
+    / 1fr;
+    gap: 8px;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+header {
+    grid-area: header;
+}
+
+
+div .body {
+    grid-area: body; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+div .main {
+    padding: 10vw;
+    line-height: 2.1vw;
+}
+
+div .side {
+    padding-right: 10vw;
+
+}
+
+div h1 {
+    font-family: "Gambetta-Variable", serif;
+    font-size: 5vw;
+    font-variation-settings: 'wght' 700.0;
+    letter-spacing: 1.2vw;
+    margin: 0;
+}
+
+div p {
+    font-size: 2vw;
+    padding-top: 0.8em;
+    margin: 0;
+}
+
+div img {
+    max-width: 20vw;
+    max-height: 20vw;
+    border: 2px solid #FAF9F6;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-family: 'Satoshi-Variable', sans-serif;
+    font-variation-settings: 'wght' 500.0;
+}
+
+ul li {
+    display: inline;
+    margin: 0 1vw;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FAF9F6;
+    font-size: 2.5vw;
+}
+
+li a:hover {
+    transition: 300ms;
+    color: #ce93be;
+}
+
+@media only screen and (orientation: portrait) {
+    div .body {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div .side {
+        padding-right: 0;
+        margin-top: 5vh;
+    }
+
+    div .main {
+        padding: 8vw;
+        line-height: 5.5vw;
+        flex-grow: 1;
+    }
+
+    img {
+        object-fit: cover;
+        min-width: 40vw;
+        min-height: 50vw;
+    }
+
+    div p {
+        font-size: 5vw;
+        padding-top: 0.6em;
+    }
+
+    ul li a {
+        font-size: 6vw;
+    }
+  }
