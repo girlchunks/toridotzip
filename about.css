@@ -12,6 +12,8 @@ html, body {
     font-variation-settings: 'wght' 500.0;
     background-color: #0C0C0C;
     color: #FAF9F6;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -29,14 +31,14 @@ html, body {
 
 header {
     grid-area: header;
-    position: fixed;
+    position: absolute;
     width: 100%;
 }
 
 
 div .body {
     grid-area: body; 
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex; 
     flex-direction: row;
     justify-content: center;
@@ -108,14 +110,14 @@ li a:hover {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        /* padding-top: 5vh;
+        padding-bottom: 5vh; */
         flex-wrap: wrap;
     }
 
     div .side {
         padding-right: 0;
-        margin-top: 5vh;
+        margin-top: 7vh;
     }
 
     div .main {
