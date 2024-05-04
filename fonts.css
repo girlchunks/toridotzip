@@ -10,7 +10,7 @@
  * Gambetta Variable(Variable font)
 */
 
-/**
+  /**
 * This is a variable font
 * You can controll variable axes as shown below:
 * font-variation-settings: 'wght' 300.0 'wght' 700.0;
@@ -19,14 +19,14 @@
 * 'wght' (range from 300.0 to 700.0)
 */
 
-@font-face {
+  @font-face {
     font-family: 'Gambetta-Variable';
     src: url('fonts/Gambetta-Variable.woff2') format('woff2'),
-         url('fonts/Gambetta-Variable.woff') format('woff'),
-         url('fonts/Gambetta-Variable.ttf') format('truetype');
-         font-weight: 300 700;
-         font-display: swap;
-         font-style: normal;
+      url('fonts/Gambetta-Variable.woff') format('woff'),
+      url('fonts/Gambetta-Variable.ttf') format('truetype');
+    font-weight: 300 700;
+    font-display: swap;
+    font-style: normal;
   }
 
   /**
@@ -41,17 +41,17 @@
  * Satoshi Variable(Variable font)
 */
 
-/**
+  /**
 * available axes:
 * 'wght' (range from 300.0 to 900.0)
 */
 
-@font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('fonts/Satoshi-Variable.woff2') format('woff2'),
-       url('fonts/Satoshi-Variable.woff') format('woff'),
-       url('fonts/Satoshi-Variable.ttf') format('truetype');
-       font-weight: 300 900;
-       font-display: swap;
-       font-style: normal;
-}
+  @font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('fonts/Satoshi-Variable.woff2') format('woff2'),
+      url('fonts/Satoshi-Variable.woff') format('woff'),
+      url('fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+  }

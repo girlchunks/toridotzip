@@ -1,10 +1,11 @@
 Reset CSS * {
-    margin    : 0px 0;
-    padding   : 0px 2px;
+    margin: 0px 0;
+    padding: 0px 2px;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0%;
     width: 100%;
     font-family: 'Satoshi-Variable', sans-serif;
@@ -16,9 +17,7 @@ html, body {
     width: 100%;
     display: grid;
     grid:
-      "header" auto
-      "main" 1fr
-      / 1fr;
+        "header"auto "main"1fr / 1fr;
     gap: 8px;
 }
 
@@ -39,7 +38,7 @@ ul {
     padding: 0;
     margin: 0;
     font-family: 'Satoshi-Variable', sans-serif;
-    font-variation-settings: 'wght' 500.0;
+    font-variation-settings: 'wght'500.0;
 }
 
 ul li {
@@ -64,10 +63,10 @@ main {
 
 .grid-wrapper {
     width: 100%;
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-areas: 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
         "img1 ."
         ". img2"
         "img3 ."
@@ -86,20 +85,42 @@ img {
     object-fit: contain;
 }
 
-.img1 { grid-area: img1; margin-left: 2vw;}
-.img2 { grid-area: img2; }
-.img3 { grid-area: img3; }
-.img4 { grid-area: img4; }
-.img5 { grid-area: img5; margin-left: 2vw;}
-.img6 { grid-area: img6; }
-.img7 { grid-area: img7; }
+.img1 {
+    grid-area: img1;
+    margin-left: 2vw;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+    margin-left: 2vw;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
 
 footer div {
     margin-top: 7vh;
     margin-right: 2vw;
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 @media only screen and (orientation: portrait) {
@@ -108,13 +129,13 @@ footer div {
         font-size: 6vw;
     }
 
-    .grid-wrapper {  
-        margin: 0 2vw; 
+    .grid-wrapper {
+        margin: 0 2vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-    } 
+    }
 
     .img1 {
         margin: 0;
@@ -123,4 +144,4 @@ footer div {
     .img5 {
         margin: 0;
     }
-  }
+}
