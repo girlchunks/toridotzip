@@ -1,20 +1,16 @@
-Reset CSS * {
+* {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
 }
 
 html,
 body {
-    margin: 0%;
     height: 100%;
     width: 100%;
     font-family: 'Satoshi-Variable', sans-serif;
-    font-variation-settings: 'wght'500.0;
+    font-variation-settings: 'wght'500;
     background-color: #0C0C0C;
     color: #FAF9F6;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .container {
@@ -39,41 +35,35 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .main {
-    padding: 10vw;
-    line-height: 2.1vw;
-    flex-grow: 2;
+    margin: 10vw;
+    min-height: 0%;
 }
 
 .side {
     padding-right: 10vw;
-    flex-grow: 1;
 }
 
 .side img {
     max-width: 15vw;
-    height: auto;
     border: 2px solid #FAF9F6;
 }
 
-div h1 {
+h1 {
     font-family: "Gambetta-Variable", serif;
     font-size: 5vw;
-    font-variation-settings: 'wght'700.0;
+    font-variation-settings: 'wght'700;
     letter-spacing: 1.2vw;
     margin: 0;
 }
 
-div p {
+p {
     font-size: 2vw;
-    padding-top: 0.8em;
-    margin: 0;
-}
-
-nav {
-    width: 100%;
+    line-height: 2.1vw;
+    padding-top: 2vh;
 }
 
 ul {
@@ -83,7 +73,7 @@ ul {
     padding: 0;
     margin: 0;
     font-family: 'Satoshi-Variable', sans-serif;
-    font-variation-settings: 'wght'500.0;
+    font-variation-settings: 'wght'500;
 }
 
 ul li {
@@ -104,32 +94,29 @@ li a:hover {
 
 @media only screen and (orientation: portrait) {
     .body {
-        height: 100;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        overflow: scroll;
     }
 
     .side {
         padding-right: unset;
         flex-grow: unset;
-        margin-top: 7vh;
-        overflow: visible;
+        margin-top: 13%;
     }
 
     .main {
-        padding: 8vw;
-        line-height: 5.5vw;
+        margin: 8vw;
         flex-grow: 1;
     }
 
     .side img {
-        max-width: 35vw;
+        max-width: 30vw;
     }
 
-    div p {
+    p {
         font-size: 5vw;
-        padding-top: 0.6em;
+        line-height: 5.5vw;
+        padding-top: 2vh;
     }
 
     ul li a {
