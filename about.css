@@ -93,6 +93,11 @@ li a:hover {
 }
 
 @media only screen and (orientation: portrait) {
+
+    .container { 
+        height: initial; 
+    }
+
     .body {
         flex-direction: column-reverse;
         overflow: scroll;
@@ -101,11 +106,11 @@ li a:hover {
     .side {
         padding-right: unset;
         flex-grow: unset;
-        margin-top: 13%;
+        margin-top: 15%;
     }
 
     .main {
-        margin: 8vw;
+        margin: 5vw 8vw 5vw;
         flex-grow: 1;
     }
 
